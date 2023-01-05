@@ -10,6 +10,9 @@ header {
     }
     ul {
       width: 50%;
+      @include pc {
+        display: none;
+      }
       li {
         font-size: 1em;
         padding: 0 20px;
@@ -23,14 +26,24 @@ header {
 
 .hamburger {
   display: none;
+  @include pc {
+    display: inline-block;
+    width: 10%;
+  }
 }
 
 .cart {
   width: 5%;
+  @include pc {
+    width: 10%;
+  }
 }
 
 .search {
   width: 10%;
+  @include pc {
+    width: 10%;
+  }
 }
 
 // welcome
@@ -42,19 +55,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  //   h1 {
-  // @include text;
-  //     font-family: "Playfair Display", serif;
-  //     font-size: 5rem;
-  //     display: block;
-  //     font-size: 2em;
-  //     margin-block-start: 0.67em;
-  //     margin-block-end: 0.67em;
-  //     margin-inline-start: 0px;
-  //     margin-inline-end: 0px;
-  //     font-weight: bold;
-  //   }
 
   form {
     width: 40%;
@@ -100,11 +100,9 @@ header {
   padding-right: 10%;
   padding-top: 50px;
   padding-bottom: 150px;
-
-  //   h2 {
-  //     color: $color-main;
-  //     padding-bottom: 20px;
-  //   }
+  @include tab {
+    background-position: 50%;
+  }
 
   h3 {
     // @include text;
@@ -161,6 +159,7 @@ header {
     padding-bottom: 20px;
     border-bottom: 2px solid lightgrey;
   }
+
   .cuisine .firstlink {
     color: $color-main;
   }
@@ -168,7 +167,12 @@ header {
     border-bottom: 2px solid $color-main;
   }
 }
-
+.cuisine {
+  @include tab {
+    font-size: 1.3rem;
+    /* border: 2px solid black; */
+  }
+}
 // gallery
 .gallery {
   width: 90%;
@@ -177,6 +181,10 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2.5%;
+
+  @include tab {
+    grid-template-columns: 1fr 1fr;
+  }
 
   section {
     height: 200px;
@@ -239,19 +247,31 @@ header {
   .img03 {
     background: url(https://source.unsplash.com/WbA_PCv3_Co);
     @include galleryImg;
+    @include tab {
+      display: none;
+    }
   }
 
   .img04 {
     background: url(https://source.unsplash.com/SH6vc3VOOwE);
     @include galleryImg;
+    @include tab {
+      display: none;
+    }
   }
   .img05 {
     background: url(https://source.unsplash.com/ohnRXPYXDEE);
     @include galleryImg;
+    @include tab {
+      display: none;
+    }
   }
   .img06 {
     background: url(https://source.unsplash.com/j3gz0KReZbA);
     @include galleryImg;
+    @include tab {
+      display: none;
+    }
   }
   .img07 {
     background: url(https://source.unsplash.com/FFqNATH27EM);
@@ -319,6 +339,15 @@ header {
     font-size: 1.3rem;
     font-weight: 700;
     line-height: 2.5rem;
+    @include tab {
+      clear: both;
+      width: 100%;
+      padding: 10px;
+      background: rgba(255, 136, 0, 0.8);
+      span {
+        color: white;
+      }
+    }
   }
 
   .time {
@@ -330,9 +359,11 @@ header {
     width: 80%;
     padding: 50px;
     margin: 30px auto;
+    @include tab {
+      display: none;
+    }
   }
 }
-
 // footer
 
 footer {
@@ -341,57 +372,5 @@ footer {
   p {
     line-height: 3rem;
     padding: 30px 0;
-  }
-}
-
-//----------------------------------
-//responsive
-//-----------------------------------
-@media screen and (max-width: 1130px) {
-  .hamburger,
-  .cart,
-  .search {
-    width: 10%;
-  }
-
-  .hamburger {
-    display: inline-block;
-  }
-  nav ul {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .about {
-    background-position: 50%;
-  }
-  .cuisine {
-    font-size: 1.3rem;
-    /* border: 2px solid black; */
-  }
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-  }
-  .img03,
-  .img04,
-  .img05,
-  .img06 {
-    display: none;
-  }
-
-  .book {
-    section {
-      clear: both;
-      width: 100%;
-      padding: 10px;
-      background: rgba(255, 136, 0, 0.8);
-      span {
-        color: white;
-      }
-    }
-    img {
-      display: none;
-    }
   }
 }

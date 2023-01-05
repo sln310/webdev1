@@ -91,3 +91,21 @@ main {
 i {
   color: $color-main;
 }
+
+//----------------------------------
+//responsive
+//-----------------------------------
+$pc: 1130px;
+$tab: 700px;
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
