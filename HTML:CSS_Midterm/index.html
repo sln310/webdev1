@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- reset.css ress -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <title>Forestière</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <h1 class="site-title">
+        <a href="#"> <span>salon</span>
+          <span> de </span>
+          <span>beauté</span></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Photos</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#news">News</a></li>
+          <li><a href="#reserve">Reservation</a></li>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fa-brands fa-twitter"></i> </i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    
+    <main class="grid" >
+        <!-- <p>salon de beauté</p> -->
+        <h2>Forestière</h2>
+        <img src="./Image.svg" alt="" />
+      </main>
+  
+
+    <!-- about -->
+    <section id="about" class="wrapper">
+        <h2 class="sec-title">About us</h2>
+        <ul>
+            <li>salon de beauté -Forestière-</li>
+            <li>Producing Beauty and Health Through Harmony with Nature</li>
+            <li>Corporate Activities that are Gentle on the Skin, People, and the Earth</li>
+            <li>mailadress : xxxxxx@xx.com</li>
+        </ul>
+        <p>
+            We do so through the spiritual beauty and health that is available only from real ingredients.
+        </p>
+    </section>
+
+    <!-- photo -->
+    <section id="works" class="wrapper">
+        <h2 class="sec-title">Photos</h2>
+        <ul>
+            <li><img src="./img/body.jpg" alt="works1"></li>
+            <li><img src="./img/face.jpg" alt="works2"></li>
+            <li><img src="./img/hand.jpg" alt="works3"></li>
+        </ul>
+    </section>
+
+    <!-- Menu-->
+    <section id="menu" class="wrapper">
+        
+          <h2 class="sec-title">Menu</h2>
+        
+        <div class="box">
+          <div class="card">
+            <i class="fa-solid fa-child"></i>
+            <h5>Body</h5>
+            <div class="pra">
+              <p>
+                Pressing bodylines with steamed stone.
+              </p>
+              <p1>60min $120
+            </p1>
+              <p style="text-align: center">
+                <a href="#reserve" class="button">Reserve</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-face-smile"></i>
+            <h5>Face</h5>
+            <div class="pra">
+                <p>Make your skin radiant like a pearl. </p>
+              <p1>60min $90
+              </p1>
+              <p style="text-align: center">
+                <a href="#reserve" class="button">Reserve</a>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <i class="fa-solid fa-hand"></i>
+            <h5>Hand</h5>
+            <div class="pra">
+              <p>
+                Stimulate pressure points in the hands.
+              </p>
+              <p1>20min $40
+            </p1>
+              <p style="text-align: center">
+                <a href="#reserve" class="button">Reserve</a>
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+<!-- News -->
+<section id="news" class="wrapper">
+    <h2 class="sec-title">News</h2>
+    <dl><dt>
+        2022/12/02
+    </dt>
+<dd>We are celebrating our Anniversaries!</dd></dl>
+    <dl><dt>
+        2022/11/21
+    </dt>
+<dd>Please follow us on Twitter!</dd></dl>
+    <dl><dt>
+        2022/10/10
+    </dt>
+<dd>Menu has been uploaded.</dd></dl>
+    <dl><dt>
+        2022/09/28
+    </dt>
+<dd>This website has been released.</dd></dl>
+</section>
+
+<!-- Reverse -->
+<section id="reserve" class="wrapper">
+    <h2 class="sec-title">Reservation</h2>
+    <p>Make a reservation here</p>
+    <form action="#" method="post">
+    <dl>
+        <dt><label for="name">Name</label></dt>
+    <dd><input type="text" id="name"></dd>
+        <dt><label for="email">Mail</label></dt>
+    <dd><input type="email" id="email"></dd>
+        <dt><label for="content">Menu/Date</label></dt>
+    <dd><textarea id="content" cols="30" rows="10"></textarea></dd>
+</dl>
+<div class="button"><input type="submit" value="Submit"></div>
+</form>
+</section>
+
+<footer>
+  <p>Please follow me!</p>
+  <div class="social">
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+  </div>
+  <p class="end">&copy; 2022 Forestière</p>
+</footer>
+
+  </body>
+</html>

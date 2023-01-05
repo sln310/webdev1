@@ -1,0 +1,17 @@
+// @use 'base' as *;
+
+// logo
+.logo {
+  //   @include text;
+  width: 35%;
+  font-size: 1.5em;
+  font-family: $font-playFair;
+  color: $color-main;
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 1130px) {
+  .logo {
+    width: 70%;
+  }
+}

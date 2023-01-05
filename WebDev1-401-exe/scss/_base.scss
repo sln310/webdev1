@@ -1,0 +1,93 @@
+$color-text: rgb(13, 13, 37);
+$color-main: rgb(255, 136, 0);
+$color-accent: rgb(255, 170, 77);
+$color-star: rgb(255, 196, 21);
+$color-grey: rgb(247, 247, 248);
+
+$font-lato: "Lato", sans-serif;
+$font-playFair: "Playfair Display", serif;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.5rem;
+  font-family: $font-lato;
+  color: $color-text;
+}
+
+// @mixin button {
+select,
+.about a,
+.about span {
+  border: none;
+  height: 40px;
+  appearance: none;
+  background: $color-main;
+  border-radius: 5px;
+  padding: 10px 5px 10px 10px;
+  color: white;
+  margin-left: 0;
+}
+
+// @mixin text {
+h1,
+h3,
+.logo,
+.book a {
+  font-family: $font-playFair;
+  font-size: 5rem;
+}
+
+h2 {
+  color: $color-main;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  display: block;
+}
+
+main {
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1)),
+    url("https://images.unsplash.com/photo-1479044769763-c28e05b5baa5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80")
+      no-repeat center/cover;
+}
+
+@mixin galleryImg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.fa,
+.fas {
+  font-weight: 900;
+}
+
+.fa,
+.far,
+.fas {
+  font-family: "Font Awesome 5 Free";
+}
+
+.order,
+.book,
+.testimonials {
+  /* border: 2px solid yellow; */
+  text-align: center;
+}
+
+i {
+  color: $color-main;
+}
