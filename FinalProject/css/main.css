@@ -647,9 +647,12 @@ footer {
   background-color: #000;
 }
 footer .logo {
-  color: #ffffff;
   position: relative;
   padding-left: 40px;
+  color: #ffffff;
+}
+footer .logo a:visited {
+  color: inherit;
 }
 footer .adress {
   margin-left: 40px;
@@ -741,6 +744,7 @@ footer .end {
   font-size: 1.5em;
   font-weight: 700;
   color: #000;
+  cursor: pointer;
 }
 @media screen and (max-width: 1130px) {
   .logo {

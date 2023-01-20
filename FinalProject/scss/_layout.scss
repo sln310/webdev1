@@ -577,15 +577,19 @@ footer {
   color: #999999;
   background-color: #000;
   .logo {
-    color: $color-secondary;
     position: relative;
     padding-left: 40px;
+    color: $color-secondary;
+    a:visited {
+      color: inherit;
+    }
   }
   .adress {
     margin-left: 40px;
     padding-top: 20px;
     p {
       padding-bottom: 10px;
+      // font-size: 1.5rem;
 
       @include tab {
         font-size: 1rem;
