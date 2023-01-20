@@ -1,0 +1,162 @@
+// $color-primary: #0a1733;
+// $color-secondary: #ffffff;
+// $color-bg: #fbfffe;
+// $color-lp: #fedddd;
+// $color-dp: #fe9091;
+
+$color-primary: #000;
+$color-secondary: #ffffff;
+$color-bg: #fbfffe;
+$color-lp: #ffe6ce;
+$color-dp: #faa149;
+
+$font-lato: "Nunito Sans", sans-serif;
+$font-playFair: "Playfair Display", serif;
+
+* {
+  box-sizing: border-box;
+}
+
+/* Resets */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-family: $font-lato;
+}
+
+body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  background-color: $color-bg;
+  color: $color-primary;
+  display: block;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+// span {
+//   display: block;
+// }
+
+.top {
+  .left {
+    // padding: 2.5rem;
+    .text {
+      h1 {
+        font-style: normal;
+        font-weight: 400;
+        line-height: 96%;
+        text-align: center;
+        span {
+          font-weight: 700;
+        }
+      }
+      p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 160%;
+        text-align: center;
+        letter-spacing: -0.02em;
+      }
+    }
+    .button {
+      display: flex;
+      align-items: center;
+
+      a {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.02em;
+
+        color: $color-primary;
+      }
+    }
+  }
+  .right {
+    background-color: $color-lp;
+    color: $color-secondary;
+  }
+}
+
+//----------------------------------
+//responsive
+//-----------------------------------
+$pc: 1130px;
+$pc1: 960px;
+$tab: 700px;
+$pho: 500px;
+$min: 350px;
+
+@mixin pc {
+  @media screen and (max-width: ($pc)) {
+    @content;
+  }
+}
+
+@mixin pc1 {
+  @media screen and (max-width: ($pc1)) {
+    @content;
+  }
+}
+
+@mixin tab {
+  @media screen and (max-width: ($tab)) {
+    @content;
+  }
+}
+
+@mixin pho {
+  @media screen and (max-width: ($pho)) {
+    @content;
+  }
+}
+
+@mixin min {
+  @media screen and (max-width: ($min)) {
+    @content;
+  }
+}
+
+@mixin max {
+  @media screen and (min-width: ($pc)) {
+    @content;
+  }
+}
+
+@keyframes navLinksFade {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(405deg) translate(-5px, -6px);
+}
